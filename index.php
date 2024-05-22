@@ -120,11 +120,11 @@
 
 </head>
 
-<body>
+<body class="d-flex align-items-center justify-content-center" style="height: 100vh;">
     <main class="form-signin w-100 m-auto">
         <form action="login.php" method="post">
-            <img class="mb-4" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <img class="mb-4 mx-auto d-block" src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal, d-flex align-items-center justify-content-center"><b>Please Sign In</b></h1>
 
         <?php if (isset($_GET['error'])) { ?>
 
@@ -141,7 +141,7 @@
           <label for="floatingInput">Password</label>
         </div>
         <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
+        <p class="mt-5 mb-3 text-body-secondary text-center">&copy; 2017–2024</p>
 
      </form>
     </main>    
